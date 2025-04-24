@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #c6ffcf; -fx-border-color: #98ffa8;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane animated="false" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="1257.0" style="-fx-background-color: #ffffff;" text="INVENTORY">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="200.0" />
+        </content>
+         <font>
+            <Font name="MS UI Gothic" size="12.0" />
+         </font>
+      </TitledPane>
+      <TreeTableView layoutX="14.0" layoutY="59.0" prefHeight="564.0" prefWidth="1257.0" style="-fx-background-color: #54995f;">
+        <columns>
+          <TreeTableColumn fx:id="productCol" prefWidth="75.0" text="PRODUCT" />
+          <TreeTableColumn fx:id="codeCol" prefWidth="75.0" text="CODE" />
+            <TreeTableColumn fx:id="priceCol" prefWidth="75.0" text="PRICE" />
+            <TreeTableColumn fx:id="quantityCol" prefWidth="75.0" text="QUANTITY" />
+            <TreeTableColumn fx:id="actionCol" prefWidth="75.0" text="ACTION" />
+        </columns>
+         <columnResizePolicy>
+            <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TreeTableView>
+      <Button layoutX="551.0" layoutY="651.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="178.0" style="-fx-background-color: #e8ffec;" text="ADD NEW ITEM">
+         <font>
+            <Font name="Serif Regular" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
